@@ -2,10 +2,10 @@ import React from 'react';
 
 const page = () => {
     return (
-        <div className="h-[120vh] w-full bg-[#f5f7fa] px-8 py-8">
+        <div className="h-[119vh] w-full bg-[#f5f7fa] px-8 py-8">
             {/* Header */}
             <div className="text-center">
-                <h1 className=" text-[40px] md:text-[60px] lg:text-[78px] font-extrabold leading-none">Features of Goal Tracker</h1>
+                <h1 className=" text-[40px] md:text-[60px] lg:text-[78px] tracking-tight font-extrabold leading-none">Features of Goal Tracker</h1>
                 <p className="text-[20px] mt-3 text-black">
                     The app blends power with simplicity, offering needed depth.
                 </p>

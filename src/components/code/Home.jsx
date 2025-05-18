@@ -230,20 +230,20 @@ export default function Home() {
         className="relative w-full max-w-3xl mx-auto cursor-pointer group"
         onClick={handleOpen}
       >
-        <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border-2 border-gray-200 shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:border-indigo-400">
+        <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border-2 border-gray-200 shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:border-indigo-200">
           {/* Replace with your actual video thumbnail */}
           <img 
-            src="https://via.placeholder.com/1280x720" 
+            src="/images/app.jpg" 
             alt="Video thumbnail" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all rounded-2xl flex items-center justify-center">
             <div className="bg-white/90 group-hover:bg-white p-4 rounded-full shadow-lg transform group-hover:scale-110 transition-all">
               <FaPlay className="text-indigo-600 text-xl" />
             </div>
           </div>
         </div>
-        <div className="mt-3 text-center text-gray-700 font-medium">
+        <div className="mt-3 text-center text-gray-500 font-normal">
           Click to watch demo
         </div>
       </div>
@@ -256,7 +256,7 @@ export default function Home() {
         >
           <div 
             className="relative w-full max-w-4xl"
-            onClick={(e) => e.stopPropagation()} // Prevent click-through
+            onClick={(e) => e.stopPropagation()} 
           >
             {/* Close Button */}
             <button 
@@ -279,15 +279,15 @@ export default function Home() {
                 playsInline
               >
                 {/* Replace with your actual video source */}
-                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+                <source src="/videos/demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
             
             {/* Video Info (optional) */}
             <div className="mt-4 text-center text-white">
-              <h3 className="text-xl font-semibold">Product Demo</h3>
-              <p className="text-gray-300 mt-1">2:45 min</p>
+              <h3 className="text-xl font-semibold">Demo Video</h3>
+              <p className="text-gray-300 mt-1">1:10 min</p>
             </div>
           </div>
         </div>
