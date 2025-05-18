@@ -1,11 +1,11 @@
 "use client"
-import TodoApp from '@/components/code/TodoApp'
+import Home from '@/components/code/Home'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-    <TodoApp/>
+    <Home/>
     </>
   )
 }

@@ -121,6 +121,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 @font-face {
