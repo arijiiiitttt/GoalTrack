@@ -85,7 +85,7 @@ export default function Home() {
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <div className={`p-2 rounded-full ${darkMode ? 'bg-indigo-600' : 'bg-indigo-100'} flex items-center justify-center`}>
-              <GiAchievement className={`h-6 w-6 ${darkMode ? 'text-white' : 'text-indigo-600'}`} />
+              <img src="/logos/gttt.png" alt="Logo" className="h-8 w-8" />
             </div>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500">
               GoalTracker<span className="text-indigo-400">✨</span>
@@ -223,77 +223,77 @@ export default function Home() {
 
           {/* App Preview */}
 
-<section id='demo' className={`py-10  px-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-50'} relative overflow-hidden`}> 
-      <div className="w-full pt-16">
-      {/* Video Thumbnail */}
-      <div 
-        className="relative w-full max-w-3xl mx-auto cursor-pointer group"
-        onClick={handleOpen}
-      >
-        <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border-2 border-gray-200 shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:border-indigo-200">
-          {/* Replace with your actual video thumbnail */}
-          <img 
-            src="/images/app.jpg" 
-            alt="Video thumbnail" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all rounded-2xl flex items-center justify-center">
-            <div className="bg-white/90 group-hover:bg-white p-4 rounded-full shadow-lg transform group-hover:scale-110 transition-all">
-              <FaPlay className="text-indigo-600 text-xl" />
-            </div>
-          </div>
-        </div>
-        <div className="mt-3 text-center text-gray-500 font-normal">
-          Click to watch demo
-        </div>
-      </div>
-
-      {/* Video Dialog Modal */}
-      {isOpen && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
-          onClick={handleClose}
-        >
-          <div 
-            className="relative w-full max-w-4xl"
-            onClick={(e) => e.stopPropagation()} 
-          >
-            {/* Close Button */}
-            <button 
-              onClick={handleClose}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
-              aria-label="Close video"
-            >
-              <div className="bg-white/10 hover:bg-white/20 rounded-full p-2 backdrop-blur-sm">
-                <FaTimes className="text-xl" />
-              </div>
-            </button>
-            
-            {/* Video Player Container */}
-            <div className="relative aspect-w-16 aspect-h-9 bg-black rounded-xl overflow-hidden shadow-2xl">
-              <video
-                ref={videoRef}
-                className="w-full h-full object-contain"
-                controls
-                autoPlay
-                playsInline
+          <section id='demo' className={`py-10  px-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-50'} relative overflow-hidden`}>
+            <div className="w-full pt-16">
+              {/* Video Thumbnail */}
+              <div
+                className="relative w-full max-w-3xl mx-auto cursor-pointer group"
+                onClick={handleOpen}
               >
-                {/* Replace with your actual video source */}
-                <source src="/videos/demo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border-2 border-gray-200 shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:border-indigo-200">
+                  {/* Replace with your actual video thumbnail */}
+                  <img
+                    src="/images/app.jpg"
+                    alt="Video thumbnail"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all rounded-2xl flex items-center justify-center">
+                    <div className="bg-white/90 group-hover:bg-white p-4 rounded-full shadow-lg transform group-hover:scale-110 transition-all">
+                      <FaPlay className="text-indigo-600 text-xl" />
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3 text-center text-gray-500 font-normal">
+                  Click to watch demo
+                </div>
+              </div>
+
+              {/* Video Dialog Modal */}
+              {isOpen && (
+                <div
+                  className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+                  onClick={handleClose}
+                >
+                  <div
+                    className="relative w-full max-w-4xl"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {/* Close Button */}
+                    <button
+                      onClick={handleClose}
+                      className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+                      aria-label="Close video"
+                    >
+                      <div className="bg-white/10 hover:bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                        <FaTimes className="text-xl" />
+                      </div>
+                    </button>
+
+                    {/* Video Player Container */}
+                    <div className="relative aspect-w-16 aspect-h-9 bg-black rounded-xl overflow-hidden shadow-2xl">
+                      <video
+                        ref={videoRef}
+                        className="w-full h-full object-contain"
+                        controls
+                        autoPlay
+                        playsInline
+                      >
+                        {/* Replace with your actual video source */}
+                        <source src="/videos/demo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+
+                    {/* Video Info (optional) */}
+                    <div className="mt-4 text-center text-white">
+                      <h3 className="text-xl font-semibold">Demo Video</h3>
+                      <p className="text-gray-300 mt-1">1:10 min</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-            
-            {/* Video Info (optional) */}
-            <div className="mt-4 text-center text-white">
-              <h3 className="text-xl font-semibold">Demo Video</h3>
-              <p className="text-gray-300 mt-1">1:10 min</p>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
-</section>
+          </section>
 
 
           {/*       End Preview  */}
@@ -642,16 +642,16 @@ export default function Home() {
           <div className={`absolute bottom-0 left-1/4 w-80 h-80 rounded-full ${darkMode ? 'bg-purple-900/10' : 'bg-purple-100/20'} blur-[100px] animate-float3`}></div>
         </div>
 
-        <div className="max-w-6xl bg-white mx-auto">
+        <div className="max-w-6xl bg-gray-100 dark:bg-gray-700 rounded-xl mx-auto">
           <div className="relative  z-10 dark:from-gray-900/80 dark:to-gray-800/90 rounded-3xl p-8 sm:p-12  overflow-hidden">
             {/* Decorative elements */}
-            {/* <div className="absolute -top-20 -left-20 w-64 h-64 bg-indigo-500/5 rounded-full"></div>
+            <div className="absolute -top-20 -left-20 w-64 h-64 bg-indigo-500/5 rounded-full"></div>
       <div className="absolute -bottom-32 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full"></div>
-       */}
+       
             <div className="relative z-10">
               {/* Header */}
               <div className="text-center mb-16">
-                <span className={`inline-block px-5 py-1.5 rounded-full ${darkMode ? 'bg-gray-800 text-indigo-400 border border-gray-700' : 'bg-indigo-100 text-indigo-600'} text-sm font-medium mb-4 shadow-sm`}>
+                <span className={`inline-block px-5 py-1.5 rounded-full ${darkMode ? 'bg-gray-800 text-gray-200 border border-gray-700' : 'bg-indigo-100 text-indigo-600'} text-sm font-medium mb-4 shadow-sm`}>
                   Get In Touch 💬
                 </span>
                 <h2 className="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
@@ -798,21 +798,27 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className={`p-2 rounded-full ${darkMode ? 'bg-indigo-600' : 'bg-indigo-100'}`}>
-                  <GiAchievement className={`h-6 w-6 ${darkMode ? 'text-white' : 'text-indigo-600'}`} />
+                  <img
+                    src="/logos/gttt.png"
+                    alt="GoalTracker Logo"
+                    className="h-8 w-8 object-contain"
+                  />
                 </div>
-                <span className="text-xl font-bold">GoalTracker<span className="text-indigo-400">✨</span></span>
+                <span className="text-xl font-bold">
+                  GoalTracker<span className="text-indigo-400">✨</span>
+                </span>
               </div>
               <p className="mb-4">
                 The ultimate productivity app to track your goals and achievements. <span className="text-indigo-400">#GoalTracker</span>
               </p>
               <div className="flex space-x-4">
-                <a href="https://x.com/arijiiiitttt" className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} shadow`}>
+                <a href="https://x.com/arijiiiitttt" target='_blank' className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} shadow`}>
                   <FiTwitter className="h-5 w-5" />
                 </a>
-                <a href="https://github.com/arijiiiitttt" className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} shadow`}>
+                <a href="https://github.com/arijiiiitttt"  target='_blank'  className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} shadow`}>
                   <FiGithub className="h-5 w-5" />
                 </a>
-                <a href="https://www.linkedin.com/in/realarijiiiitttt/" className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} shadow`}>
+                <a href="https://www.linkedin.com/in/realarijiiiitttt/" target='_blank' className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} shadow`}>
                   <FiLinkedin className="h-5 w-5" />
                 </a>
               </div>

@@ -159,3 +159,36 @@ html {
   font-family: 'VinaSans', sans-serif;
   font-weight: 900;
 }
+
+
+@font-face {
+  font-family: 'Inter Medium';
+  font-weight: 900;
+  src: url(/public/fonts/68106c8ef3707f9214ccdf35_Inter-Medium.ttf) ;
+}
+.inter {
+  font-family: 'Inter Medium', sans-serif;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: 'Thunder SemiBold',sans-serif;
+  font-weight: 800;
+  src: url(/public/fonts/ThunderSemiBold/68106c8ef3707f9214ccdf4e_Thunder-SemiBoldLC.ttf) ;
+}
+.thSb {
+  font-family: 'Thunder SemiBold', sans-serif;
+  font-weight: 800;
+}
+
+
+@font-face {
+  font-family: 'Thunder Bold',sans-serif;
+  font-weight: 700;
+  src: url(/public/fonts/ThunderBold/68106c8ef3707f9214ccdf4f_Thunder-BoldLC.ttf) ;
+}
+.thB {
+  font-family: 'Thunder Bold', sans-serif;
+  font-weight: 700;
+}

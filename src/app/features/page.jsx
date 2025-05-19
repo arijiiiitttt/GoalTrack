@@ -18,7 +18,7 @@ const page = () => {
                     <span className="text-[60px]">🗃️</span> {/* Brain emoji */}
 
                     <div className="w-full">
-                        <h2 className="text-[38px] font-extrabold text-black">Intractive Task Cards</h2>
+                        <h2 className="text-[38px] font-extrabold tracking-tight text-black">Intractive Task Cards</h2>
                         <ul className="mt-4 text-[19px] font-semibold text-black leading-snug list-inside pl-0">
                             <li className="pl-0">Hover effects</li>
                             <li className="pl-0"> Progress indicators</li>
@@ -32,7 +32,7 @@ const page = () => {
                     <span className="text-[60px]">😎</span> {/* Brain emoji */}
 
                     <div className="w-full">
-                        <h2 className="text-[38px] font-extrabold text-black">Smart Defaults</h2>
+                        <h2 className="text-[38px] font-extrabold tracking-tight text-black">Smart Defaults</h2>
                         <ul className="mt-4 text-[19px] font-semibold text-black leading-snug list-inside pl-0">
                             <li className="pl-0">Medium priority default</li>
                             <li className="pl-0"> Today's date update</li>
@@ -47,7 +47,7 @@ const page = () => {
                     <span className="text-[60px]">💀</span> {/* Brain emoji */}
 
                     <div className="w-full">
-                        <h2 className="text-[38px] font-extrabold text-black">Error Prevention</h2>
+                        <h2 className="text-[38px] font-extrabold tracking-tight text-black">Error Prevention</h2>
                         <ul className="mt-4 text-[19px] font-semibold text-black leading-snug list-inside pl-0">
                             <li className="pl-0">Delete confirmations</li>
                             <li className="pl-0">Form validation</li>
@@ -61,7 +61,7 @@ const page = () => {
                     <span className="text-[66px]">👀</span> {/* Brain emoji */}
 
                     <div className="w-full">
-                        <h2 className="text-[38px] font-extrabold text-black">Visual Feedback</h2>
+                        <h2 className="text-[38px] font-extrabold tracking-tight text-black">Visual Feedback</h2>
                         <ul className="mt-4 text-[19px] font-semibold text-black leading-snug list-inside pl-0">
                             <li className="pl-0">Animated transitions</li>
                             <li className="pl-0">Success/error states</li>
